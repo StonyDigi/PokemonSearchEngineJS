@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /*background: linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%);*/
+    /*background: linear-gradient(100deg, orange 10%, cyan);*/
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    text-align: center;
+}
+
+.searchbBox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    animation: mymove 5s reverse;
+}
+
+.searchbBox h1 {
+    text-shadow: 2px 2px #FF0000;
+}
+
+.searchbBox input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.searchbBox button {
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.searchbBox button:hover {
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(133, 133, 133);
+    margin-top: 100px;
+}
+
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 200px;}
+  }
